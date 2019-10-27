@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav">
+        <div class="box">
+            <span class="welcome">
+            Welcome 伴予科技欢迎您~
+        </span>
+            <ul>
+                <li>
+                    <a href="">登录</a>
+                </li>
+                <li>
+                    <a href="">我的星网</a>
+                </li>
+                <li>
+                    <a href="">平台规划</a>
+                </li>
+                <li>
+                    <a href="">政策咨询</a>
+                </li>
+                <li>
+                    <a href="">服务汇总</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="logoBox">
+        <div class="box">
+            <img src="../img/logo.png" alt=""/>
+            <div class="searchBox">
+                <input type="text" placeholder="LOGO"/>
+                <a href=""></a>
+                <div class="labels">
+                    <span>LOGO设计</span>
+                    <span>VI设计</span>
+                    <span>字体设计</span>
+                    <span>画册设计</span>
+                    <span>海报设计</span>
+                    <span>包装设计</span>
+                    <span>广告设计</span>
+                </div>
+            </div>
+            <a href="" class="btn">免费发布任务</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="bread">
+            <div class="box">
+                当前位置：<a href="index.html">首页</a> ><a href="">政策资讯</a> > <span>详情</span>
+            </div>
+        </div>
+        <div class="inner box news">
+            <div class="left shadowBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-center none-effect"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="../img/cImg1.png" ></a></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="right shadowBox">
+            </div>
+        </div>
+    </div>
+    <div class="emptyLine">
+
+    </div>`
+    <div class="footer">
+        <div class="box">
+            <ul>
+                <li>
+                    <a href="">
+                        关于我们
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        联系我们
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        隐私策略
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        平台规则
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        政策资讯
+                    </a>
+                </li>
+            </ul>
+            <div class="copyRight">
+                <span>Copyright 2005-2019 zbj.com 版权所有</span>
+                <span>渝ICP10202274-4号 渝B2-20080005 渝公网安备 500190025001</span>
+                <span>重庆伴予科技有限公司提供技术支持</span>
+            </div>
+            <img src="../img/whechat.png" alt=""/>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        speed:1000,
+        autoplayDisableOnInteraction : false,
+        loop:true,
+        centeredSlides : true,
+        slidesPerView:2,
+        pagination : '.swiper-pagination',
+        paginationClickable:true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        onInit:function(swiper){
+            swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+        },
+        breakpoints: {
+            668: {
+                slidesPerView: 1,
+            }
+        }
+    });
+</script>
+</body>
+</html>
