@@ -84,9 +84,9 @@
                         <li><span class="number">数量</span></li>
                         <li>
                             <ul class="count">
-                                <li><span id="num-jian" class="num-jian">-</span></li>
-                                <li><input type="text" class="input-num" id="input-num" value="0" /></li>
-                                <li><span id="num-jia" class="num-jia">+</span></li>
+                                <li><span class="num-jian">-</span></li>
+                                <li><input type="text" class="input-num" value="0" /></li>
+                                <li><span class="num-jia">+</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -319,16 +319,18 @@
     });
 
     $(document).ready(function(){
-        $("#num-jian").click(function (){
-            debugger;
-            if($("#input-num").val() <= 0) {
-                $("#input-num").val(0);
+        //        数量加减1
+        $(".num-jian").click(function (){
+            var ele = $(this).parents(".count").find(".input-num");
+            if(parseInt(ele.val()) <= 0) {
+                ele.val(0);
             } else {
-                $("#input-num").val(parseInt($("#inpu-num").val()) - 1);
+                ele.val(parseInt(ele.val()) - 1);
             }
         });
-        $("#num-jia").click(function() {
-            $("#input-num").val(parseInt($("#input-num").val()) + 1);
+        $(".num-jia").click(function() {
+            var ele = $(this).parents(".count").find(".input-num");
+            ele.val(parseInt(ele.val()) + 1);
         });
     });
 </script>
